@@ -2,29 +2,24 @@
 using System.Collections;
 
 public class Tipper : MonoBehaviour {
-
-	public Transform tipperBase;
-	public Transform Tower;
-	private arm ArmScript;
+	public Globals global;
 	private int count;
-	// Use this for initialization
+
 	void Start () {
-		tipperBase = transform.FindChild("TipperBase");
-		ArmScript = GameObject.Find("Arm").GetComponent<arm>();
+		global = GameObject.Find("GameManager").GetComponent<Globals>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		if(tipperBase.transform.rotation.z >= 0 && Input.GetKeyDown("space"))
+		if(global.tipperBase.transform.rotation.z >= 0 && Input.GetKeyDown("space"))
 		{
-			tipperBase.Rotate(0,0,-45);
+			global.tipperBase.Rotate(0,0,-45);
 			collider.enabled = true;
 			count = 10;
 		}
 
-		if(tipperBase.transform.rotation.z <= 0)
+		if(global.tipperBase.transform.rotation.z <= 0)
 		{
-			tipperBase.Rotate(0,0,1);
+			global.tipperBase.Rotate(0,0,1);
 		}
 
 		if(count > 0)
@@ -36,8 +31,7 @@ public class Tipper : MonoBehaviour {
 	void OnTriggerEnter(Collider collision){
 		if(collision.gameObject.tag == "Plane")
 		{
-			Debug.Log("ello");
-			ArmScript.addForceToArm();
+			global.ArmScript.addForceToArm(global.playerPower);
 		}
 
 	}

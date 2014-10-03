@@ -33,6 +33,12 @@
 -define:ENABLE_NAVMESH_CARVING
 -define:ENABLE_DUCK_TYPING
 -define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+'Assets/Scripts/Aicoin.cs'
+'Assets/Scripts/Coin.cs'
+'Assets/Scripts/Globals.cs'
+'Assets/Scripts/IDLspiner.cs'
 'Assets/Scripts/Tipper.cs'
+'Assets/Scripts/TipperAIscript.cs'
 'Assets/Scripts/TowerScript.cs'
 'Assets/Scripts/arm.cs'
+'Assets/Scripts/gameManager.cs'

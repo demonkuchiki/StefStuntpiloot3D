@@ -37,6 +37,12 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
+'Assets/Scripts/Aicoin.cs'
+'Assets/Scripts/Coin.cs'
+'Assets/Scripts/Globals.cs'
+'Assets/Scripts/IDLspiner.cs'
 'Assets/Scripts/Tipper.cs'
+'Assets/Scripts/TipperAIscript.cs'
 'Assets/Scripts/TowerScript.cs'
 'Assets/Scripts/arm.cs'
+'Assets/Scripts/gameManager.cs'

@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TowerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/gameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/TowerScript.cs" Line="17" Column="50" />
-      <File FileName="Assets/Scripts/Tipper.cs" Line="38" Column="6" />
+      <File FileName="Assets/Scripts/gameManager.cs" Line="14" Column="24" />
+      <File FileName="Assets/Scripts/Globals.cs" Line="12" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
